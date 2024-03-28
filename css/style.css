@@ -1,0 +1,127 @@
+html{
+  box-sizing: border-box;
+}
+*,*::after,*::before{
+  box-sizing: inherit;
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  background-color: #f7cd75;
+}
+.wrapper{
+  width: 800px;
+  margin: 100px auto 0;
+  background-color: #fff;
+}
+.cf::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+.cards{
+  float: left;
+  overflow-y: scroll;
+  background-color: #f2f2f2;
+  width: 300px;
+  padding: 40px 40px 15px;
+  max-height: 450px;
+}
+.card_box{
+  margin-top: 45px;
+  color: #717890;
+}
+header .cards_title{
+  float: left;
+  font-weight: 400;
+  margin: 0;
+}
+header .cards_img{
+  float: right;
+}
+.card{
+  background-color: #fff;
+   padding: 25px 25px 15px 15px;
+  border:  2px solid #dedede;
+  transition: .3s ease all;
+}
+.card:hover{
+  border: 2px solid #8793c6;
+}
+.image_card{
+  width: 65px;
+}
+.card_number{
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.card_date{
+  margin: 0;
+}
+.card.active{
+  border:  2px solid #8793c6;
+ position: relative;
+}
+.card + .card{
+  margin-top: 30px;
+}
+
+.balance_side{
+  float: right;
+  width: 500px;
+  overflow-y: auto;
+  background-color: #fff;
+  padding: 40px 40px 15px 40px;
+  max-height: 450px;
+}
+.card_balance_sectoin{
+  margin-bottom: 45px;
+}
+.card_balance_title{
+  float: left;
+  margin: 0;
+  font-weight: 400;
+}
+.card_balance_sectoin p{
+  margin: 0;
+  float: right;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+.kirim-chiqim{
+  width: 20px;
+  display: block;
+  float: left;
+  margin-top: 30px;
+  padding: 2px;
+  border-radius: 50%;
+  border: 1px solid #e2e2e2;
+}
+.products_names{
+  margin-top: 45px;
+}
+.product_information{
+  float: left;
+  line-height: 1.2;
+  margin-left: 30px;
+}
+.product_title{
+  margin-bottom: 0;
+}
+.product_text{
+  margin-top: 0;
+  color: #b6b6b6;
+}
+.product_price{
+  float: right;
+}
+.product_name .product_price .expenditure{
+  color: #8797c6;
+}
+.product_name .product_price .income{
+  color: #8ace5e;
+}
+.product_name .product_price .product_price_text>sup{
+  font-size: .7rem;
+}
